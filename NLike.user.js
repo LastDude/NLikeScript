@@ -6,6 +6,7 @@
 // @grant	GM.getValue
 // @description visible rating system for nhentai
 // @author LastDude
+// @icon https://raw.githubusercontent.com/LastDude/NLikeScript/master/pictures/logoNlike.png
 // @noframes
 // ==/UserScript==
 
