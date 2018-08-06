@@ -22,12 +22,13 @@ i.style.cssText = "position:fixed;top:40%;right:0%;z-index:100;font-size:2.5em;"
   
 var liste = document.getElementsByClassName("gallery");
 // URL
-let url = document.URL;
+let docURL = document.URL;
+let url = docURL.substring(docURL.lastIndexOf('/', docURL.lastIndexOf('/')-1)+1, docURL.length-1);
 
 (async () => {
   var rated = await GM.getValue(url, 0);
   var star = document.createElement("i");
-  star.style.cssText = "position:absolute;z-index:9;top:0%;right:0%;background-color:rgba(100, 100, 100, 0.7);border-radius:10%;font-size:3em;color:#ffca28";
+  star.style.cssText = "position:absolute;z-index:9;top:0%;right:0%;background-color:rgba(100, 100, 100, 0.7);border-radius:10%;font-size:3em;color:#ffca28;";
   star.className = "material-icons";
   star.innerHTML = "star";
   
@@ -61,7 +62,7 @@ let url = document.URL;
   
   for (var h = 0; h < liste.length; h++) {
     var item = liste.item(h);
-    var reference = liste.item(h).firstChild.href;
+    var reference = item.firstChild.href.substring(item.firstChild.href.lastIndexOf('/', item.firstChild.href.lastIndexOf('/')-1)+1, item.firstChild.href.length-1);
     var rating = await GM.getValue(reference, 0);
     // blurring out already rated bad
     if( rating == -1){
