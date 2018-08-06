@@ -2,6 +2,7 @@
 // @name     NLike
 // @version  1.0
 // @match https://nhentai.net/*
+// @exclude https://nhentai.net/g/*/*/
 // @grant	GM.setValue
 // @grant	GM.getValue
 // @description visible rating system for nhentai
