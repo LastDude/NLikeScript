@@ -6,8 +6,8 @@
 // @author      LastDude
 // @match       https://nhentai.net/*
 // @exclude     https://nhentai.net/g/*/*/
-// @grant	      GM.setValue
-// @grant	      GM.getValue
+// @grant	  GM.setValue
+// @grant	  GM.getValue
 // @icon        https://raw.githubusercontent.com/LastDude/NLikeScript/master/pictures/logoNlike.png
 // @noframes
 // ==/UserScript==
