@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name     NLike
 // @version  1.0
+// @license MIT
 // @match https://nhentai.net/*
 // @exclude https://nhentai.net/g/*/*/
 // @grant	GM.setValue
 // @grant	GM.getValue
-// @license MIT
 // @description visible rating system for nhentai
 // @author LastDude
 // @icon https://raw.githubusercontent.com/LastDude/NLikeScript/master/pictures/logoNlike.png
